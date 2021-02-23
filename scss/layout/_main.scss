@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  font-family: 'Manrope', sans-serif;
+  background-color: $very_pale_blue;
+  background-image: url('../images/bg-pattern.svg');
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $graish_blue;
+}
+
+.attribution {
+  margin: 30px;
+}

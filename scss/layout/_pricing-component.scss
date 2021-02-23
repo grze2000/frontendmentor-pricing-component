@@ -1,0 +1,91 @@
+.pricing-component {
+  background-color: $white;
+  width: 40%;
+  border-radius: 5px;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "views price"
+                        "slider slider"
+                        "billing billing"
+                        "features trial";
+  align-items: center;
+  -moz-box-shadow: 0px 10px 22px 0px $light_grayish_blue;
+  -webkit-box-shadow: 0px 10px 22px 0px $light_grayish_blue;
+  box-shadow: 0px 10px 22px 0px $light_grayish_blue;
+}
+
+.views {
+  grid-area: views;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.price {
+  grid-area: price;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.price-value {
+  font-size: 2.5em;
+  font-weight: 800;
+  color: $dark_desaturated_blue;
+  margin-right: 5px;
+}
+
+.slider {
+  grid-area: slider;
+  padding: 30px 0;
+}
+
+.billing {
+  grid-area: billing;
+  text-align: right;
+  font-size: smaller;
+  padding-bottom: 40px;
+  border-bottom: 1px solid $light_grayish_blue;
+  margin-bottom: 20px;
+}
+
+.discount {
+  background-color: $light_grayish_red;
+  color: $light_red;
+  border-radius: 1em;
+  padding: 2px 5px;
+  font-size: smaller;
+  font-weight: 800;
+}
+
+.trial {
+  grid-area: trial;
+  text-align: center;
+}
+
+.features {
+  grid-area: features;
+  font-size: smaller;
+}
+
+.feature-list {
+  list-style-image: url('../images/icon-check.svg');
+
+  li {
+    padding: 4px;
+  }
+}
+
+.btn {
+  border-radius: calc(1em + 20px);
+  border: 0;
+  background-color: $dark_desaturated_blue;
+  color: $light_grayish_blue2;
+  padding: 15px 50px;
+  cursor: pointer;
+  font-weight: 600;
+
+  &:hover {
+    color: $white;
+  }
+}
