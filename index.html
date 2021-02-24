@@ -25,12 +25,15 @@
   <div class="pricing-component">
     <div class="views"><span class="views-value">100</span>K Pageviews</div>
     <div class="price"><span class="price-value">$16.00</span> /month</div>
-    <div class="slider">
-      <input type="range" id="views" min="0">
+    <div class="slider-container">
+      <input type="range" id="views" min="0" class="slider">
     </div>
     <div class="billing">
       Monthly Billing
-      <input type="checkbox" id="billing-type">
+      <label for="billing-type" class="switch">
+        <input type="checkbox" id="billing-type" class="switch__checkbox">
+        <span class="switch__slider"></span>
+      </label>
       Yearly Billing <span class="discount">25% discount</span>
     </div>
     <div class="trial">
