@@ -1,9 +1,11 @@
 body {
   margin: 0;
+  padding-top: 20px;
   font-family: 'Manrope', sans-serif;
   background-color: $very_pale_blue;
   background-image: url('../images/bg-pattern.svg');
   background-repeat: no-repeat;
+  background-size: contain;
   display: flex;
   flex-direction: column;
   align-items: center;
