@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
+  <script defer src="js/scripts.js"></script>
   <title>Frontend Mentor | Interactive pricing component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -25,7 +25,7 @@
   <div class="pricing-component">
     <div class="views"><span class="views-value">100</span>K Pageviews</div>
     <div class="slider-container">
-      <input type="range" id="views" min="0" class="slider">
+      <input type="range" id="views" min="0" max="100" class="slider">
     </div>
     <div class="price"><span class="price-value">$16.00</span> /month</div>
     <div class="billing">
